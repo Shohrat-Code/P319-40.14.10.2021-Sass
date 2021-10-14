@@ -1,0 +1,98 @@
+main {
+  // background-color: $main-color;
+  // #services {
+  //   padding: 100px 0px;
+  //   .item {
+  //     padding: 15px;
+  //     background-color: white;
+  //     box-shadow: 0px 0px 35px -30px black;
+  //     .media {
+  //       overflow: hidden;
+  //       img {
+  //         max-width: 100%;
+  //       }
+
+  //       .appointment {
+  //         @include custom-btn(
+  //           $theme: $main-color,
+  //           $pl: 20px,
+  //           $pr: 20px,
+  //           $fs: 20px
+  //         );
+
+  //         &:hover {
+  //           color: red;
+  //         }
+  //       }
+  //     }
+
+  //     .content {
+  //       padding: 15px;
+
+  //       ul {
+  //         list-style-type: none;
+
+  //         li {
+  //           display: inline-block;
+  //           a {
+  //             text-decoration: none;
+  //             padding: 8px 15px;
+  //             background-color: grey;
+  //             i {
+  //               font-size: 12px;
+  //             }
+  //           }
+
+  //           .more {
+  //             @include custom-btn(
+  //               $theme: rgb(122, 122, 122),
+  //               $pl: 15px,
+  //               $pr: 15px,
+  //               $fs: 14px
+  //             );
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  #news {
+    padding: 150px 0px;
+    .item {
+      box-shadow: 0px 0px 47px -16px black;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: all 0.1s linear;
+      cursor: pointer;
+      .media {
+        img {
+          max-width: 100%;
+        }
+      }
+      .content {
+        padding: 25px;
+        h4 {
+          font-size: 10px;
+          background: #d0d0d0;
+          display: inline-block;
+          color: $main-color;
+          padding: 4px 10px;
+          border-radius: 30px;
+        }
+        h1 {
+          font-size: 22px;
+          color: $sec-color;
+        }
+        address {
+          font-size: 12px;
+          color: $third-color;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-6px);
+      }
+    }
+  }
+}

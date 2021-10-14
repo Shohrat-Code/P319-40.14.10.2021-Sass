@@ -1,0 +1,48 @@
+@import "./partials/variables";
+@import "./partials/extends";
+@import "./partials/mixins";
+
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/main";
+@import "./partials/about";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 1500px;
+}
+
+header {
+}
+header #custom-navbar {
+  background: rgba(48, 32, 87, 0.7);
+}
+header #custom-navbar .navbar {
+}
+
+header #custom-navbar .navbar .btn-success {
+  background: white;
+  color: blue;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header #custom-navbar .navbar .btn-success:hover {
+  transform: translateY(-1px);
+  color: black;
+}
+
+main #banner {
+  background-image: url("../img/title-bar.6abc00a7a8c05b3cfc83.jpg");
+  padding: 120px 0px;
+  background-position: 50%;
+  background-size: cover;
+  background-blend-mode: color;
+  background-color: rgba(black, 0.5);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
+}
